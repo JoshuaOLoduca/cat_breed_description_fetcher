@@ -13,7 +13,7 @@ const fetchBreedDescription = function(breedName, callback) {
     const data = JSON.parse(body);
     
     if (data.length === 0) {
-      callback(breedName + ' Not found');
+      callback('Error: ', breedName + ' breed Not found');
       return;
     }
     
